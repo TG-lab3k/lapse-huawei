@@ -1,0 +1,45 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/leigt/.ohos/config/auto_debug_lapse-huawei_com.lapse.beta_2850086000516030449.cer",
+          "storePassword": "0000001B70190E026C5002CBCEF5A6BCBA809E5E56215ADB5C898685B98B2B67EA609AB4BBE3567E2E9AC8",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BD85680ED830C4F741696422C1C70296C3D6CB21C70D3DE5AFC2F76551D00838B35A671D169AE72",
+          "profile": "/Users/leigt/.ohos/config/auto_debug_lapse-huawei_com.lapse.beta_2850086000516030449.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/leigt/.ohos/config/auto_debug_lapse-huawei_com.lapse.beta_2850086000516030449.p12"
+        }
+      }
+    ],
+    "compileSdkVersion": 9,
+    "compatibleSdkVersion": 9,
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "library",
+      "srcPath": "./library"
+    }
+  ]
+}
